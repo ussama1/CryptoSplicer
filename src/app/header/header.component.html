@@ -1,0 +1,306 @@
+
+<div class="main-search">
+  <i class="fas fa-times" id="closeSearch"></i>
+  <div class="search-holder">
+    <div class="container">
+      <form class="form-search animated">
+        <mat-form-field>
+          <input matInput type="search" placeholder="Search to Learn with a ROAR!" value="" name="name" [(ngModel)]= "name">
+        </mat-form-field>
+        <button (click)="onsubmit(name)" style="display: none;">hi</button>
+        <!--<input class="search-input" placeholder="Search to Learn with a ROAR!">-->
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<header class="wrapp-header">
+  <div class="main-nav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <a routerLink="/" class="logo">
+            <img src="/assets/images/CryptoSplicerLogoBlackColor.png" alt="CryptoSplice">
+          </a>
+          <div class="main-nav__btn" data-toggle="collapse" data-target="#mainNav">
+            <div class="icon-left"></div>
+            <div class="icon-right"></div>
+          </div>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="main-nav__list">
+
+              <li class="active">
+                <a routerLink="javascript:void(0)">
+                  <i class="material-icons">description</i> News
+                </a>
+                <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a routerLink="/AllNews/Bitcoin"> Bitcoin News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/Ethereum"> Ethereum News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/Altcoin"> Altcoin News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/Blockchain"> Blockchain News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/Litecoin"> Litecoin News</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AllNews/Ripple"> Ripple News</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AllNews/BitCash"> BitcoinCash News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/BitStamp"> Bitstamp News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/CoinMap"> CoinMap News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/Crypto"> Crypto News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/Dogecoin"> Dogecoin News</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/AllNews/ICO"> ICO News</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a routerLink="">
+                  <i class="material-icons">dashboard</i> Techical Analysis
+                </a>
+                <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a routerLink="/AllCoins/Bitcoin">Bitcoin Analysis</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AllCoins/Ethereum">Ethereum Analysis</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AllCoins/Altcoin">Altcoin Analysis</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AllCoins/Litecoin">Litecoin Analysis</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AllCoins/Crypto">Crypto Analysis</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a routerLink="/price">
+                  <i class="material-icons">trending_up</i> Price Tracker
+                </a>
+                <div class="sub-menu">
+                <ul>
+                <li>
+                <a routerLink="/charts">Charts</a>
+                </li>
+                </ul>
+                </div>
+              </li>
+
+              <li>
+                <a routerLink="/guides">
+                  <i class="material-icons">import_contacts</i> Education
+                </a>
+                <!--<div class="sub-menu">-->
+                  <!--<ul>-->
+                    <!--<li>-->
+                      <!--<a routerLink="/guides">Guides</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                      <!--<a routerLink="/cryptopedia">CryptoPedia</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                      <!--<a routerLink="/education">Education</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                      <!--<a routerLink="/knowledge">KnowledgeBase</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              </li>
+
+              <!--<li class="main-nav__list-advertise">-->
+                <!--<a routerLink="/advertise">-->
+                  <!--<i class="material-icons">theaters</i>Advertise-->
+                <!--</a>-->
+                <!--<div class="sub-menu">-->
+                  <!--<ul>-->
+                    <!--<li>-->
+                      <!--<a routerLink="/why-cryptosplicer">CryptoSplicer AI</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</li>-->
+
+              <!-- ===============================
+                Bars
+              ================================ -->
+
+              <li class="main-nav__list-bars">
+                <a href="javascript:void(0)">
+                  <i class="fas fa-bars"></i>
+                </a>
+                <div class="sub-menu">
+                  <ul>
+
+                    <li class="main-nav__list-advertise-1">
+                      <a routerLink="/advertise">
+                        <i class="material-icons">theaters</i>Advertise
+                      </a>
+                      <div class="sub-sub-menu">
+                        <ul>
+                          <li>
+                            <a routerLink="/why-cryptosplicer">CryptoSplicer AI</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="main-nav__list-advertise-1">
+                      <a routerLink="/Event">
+                        <i class="material-icons">theaters</i>Events
+                      </a>
+                    </li>
+
+                    <li>
+                      <a>
+                        <i class="fas fa-broadcast-tower"></i> Exclusive News
+                      </a>
+                      <div class="sub-sub-menu">
+                        <ul>
+                          <li>
+                            <a routerLink="/exclusive/Business">Business & Finance News</a>
+                          </li>
+                          <li>
+                            <a routerLink="/exclusive/Law">Law & legislation News</a>
+                          </li>
+                          <li>
+                            <a routerLink="/exclusive/Mining">Mining News</a>
+                          </li>
+                          <li>
+                            <a routerLink="/exclusive/Technology">Technology News</a>
+                          </li>
+                          <li>
+                            <a routerLink="/exclusive/Wallets">Wallets News</a>
+                          </li>
+                          <li>
+                            <a routerLink="/exclusive/Sponserd">Sponserd News</a>
+                          </li>
+                          <li>
+                            <a routerLink="/exclusive/Press">Press Releases News</a>
+                          </li>
+                          <li>
+                            <a routerLink="/exclusive/World">World News</a>
+                          </li>
+                          <li>
+                            <a routerLink="/exclusive/Opinion">Opinions News</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+
+              <li class="info-box-02__box-02">
+                <a href="javascript:void(0)" class="search-block" id="searchIcon">
+                  <i class="fa fa-search search-size"></i>
+                </a>
+              </li>
+
+                <!--<a routerLink="javascript:void(0)">-->
+                  <!--<i class="fab fa-android"></i>-->
+                <!--</a>-->
+              <!--</li>-->
+
+              <!--<li>-->
+                <!--<a routerLink="javascript:void(0)">-->
+                  <!--<i class="fab fa-apple"></i>-->
+                <!--</a>-->
+              <!--</li>-->
+
+            </ul>
+
+            <ul class="main-nav__list floatright">
+
+              <li>
+                <a routerLink="/signup" *ngIf="!check_login()" >
+                  <i class="material-icons" >person_add</i> Sign Up
+                </a>
+              </li>
+
+              <li class="list-user" *ngIf="!check_login()">
+                <a routerLink="/login">
+                  <i class="material-icons" >fingerprint</i> Log in
+                </a>
+              </li>
+
+              <li *ngIf="check_login()">
+                <a routerLink="">
+                  <i class="material-icons" >account_circle</i> My CryptoSplicer
+                </a>
+                <div class="sub-menu">
+                  <ul>
+                    <!--<li>-->
+                    <!--<a routerLink="/userprofile">-->
+                    <!--<i class="material-icons">mode_edit</i> My Profile-->
+                    <!--</a>-->
+                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                    <!--<li>-->
+                    <!--<a routerLink="/uploadbook">-->
+                    <!--<i class="material-icons">unarchive</i> Add Material-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a routerLink="/mylibrary">-->
+                    <!--<i class="material-icons">library_books</i> My Library-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a routerLink="/">-->
+                    <!--<i class="material-icons">local_activity</i> All Events-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li *ngIf="check_login()">
+                      <a routerLink="/login" (click)="logout()">
+                        <i class="material-icons">error_outline</i> Logout
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

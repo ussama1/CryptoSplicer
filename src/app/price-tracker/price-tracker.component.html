@@ -1,0 +1,1726 @@
+<div class="container price-tracker">
+  <mat-tab-group class="mt-5">
+    <mat-tab label="USD">
+      <div class="my-5">
+        <h2>1.
+          <img src="https://cimg.co/w/rw-logo/0/5a6/57368214d8.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              5
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>2.
+          <img src="https://cimg.co/w/rw-logo/0/5a7/4b2b335865.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Bitstamp'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Bitstamp'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>3.
+          <img src="https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmazX9HPBTQeEsDpTSxxvdbZGL6jX3uh778rdu7YtcHHg1"
+               class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              5
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>4.
+          <img src="http://i.imgur.com/YPIJfXr.png" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              5
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>5.
+          <img src="http://list.wiki/images/8/83/EXMO.png" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              5
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>6.
+          <img src="https://cimg.co/w/rw-logo/0/5a6/574935a189.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>7.
+          <img src="https://cimg.co/w/rw-logo/0/5ab/cd3db2bea6.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td>
+              <strong>NEM</strong> XEM
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price | currency:'USD'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-tab>
+    <mat-tab label="EUR">
+      <div class="my-5">
+        <h2>1.
+          <img src="https://cimg.co/w/rw-logo/0/5a6/57368214d8.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_EUR">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_EUR">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price | currency:'EUR'}}</p>
+              </div>
+            </td>
+          </tr>
+          <!--<tr>-->
+          <!--<th>-->
+          <!--2-->
+          <!--</th>-->
+          <!--<td>-->
+          <!--<strong>Ethereum</strong> ETH-->
+          <!--</td>-->
+          <!--<td>-->
+          <!--<div *ngFor="let data of ETH_EUR">-->
+          <!--<p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td>-->
+          <!--<div *ngFor="let data of ETH_EUR">-->
+          <!--<p *ngIf="data?.market=='BitFinex'">{{data?.price | currency:'EUR'}}</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--</tr>-->
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>2.
+          <img src="http://list.wiki/images/8/83/EXMO.png" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_EUR">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_EUR">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price | currency:'EUR' }}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_EUR">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_EUR">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price | currency:'EUR' }}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_EUR">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_EUR">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price | currency:'EUR' }}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>3.
+          <img src="https://cimg.co/w/rw-logo/0/5a6/574935a189.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_EUR">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_EUR">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price | currency:'EUR' }}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_EUR">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_EUR">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price | currency:'EUR' }}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_EUR">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_EUR">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price | currency:'EUR' }}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_EUR">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_EUR">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price | currency:'EUR' }}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>4.
+          <img src="https://cimg.co/w/rw-logo/0/5ab/cd3db2bea6.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_USD">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price | currency:'EUR' }}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-tab>
+    <mat-tab label="GBP">
+      <div class="my-5">
+        <h2>1.
+          <img src="https://cex.io/img/cex.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_GBP">
+                <p *ngIf="data?.market=='Cex.io'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_GBP">
+                <p *ngIf="data?.market=='Cex.io'">{{data?.price | currency:'GBP' }}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_GBP">
+                <p *ngIf="data?.market=='Cex.io'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_GBP">
+                <p *ngIf="data?.market=='Cex.io'">{{data?.price | currency:'GBP'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>2.
+          <img src="https://cimg.co/w/rw-logo/0/5a6/574935a189.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Bitcoin</strong> BTC
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_GBP">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BTC_GBP">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price  | currency:'GBP'}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_GBP">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_GBP">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price | currency:'GBP'}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-tab>
+    <mat-tab label="BTC">
+      <div class="my-5">
+        <h2>1.
+          <img src="https://cimg.co/w/rw-logo/0/5a6/57368214d8.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='BitFinex'"> {{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_BTC">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_BTC">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>2.
+          <img src="https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmazX9HPBTQeEsDpTSxxvdbZGL6jX3uh778rdu7YtcHHg1"
+               class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td>
+              <strong>NEM</strong> XEM
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              5
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_BTC">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>3.
+          <img src="http://i.imgur.com/YPIJfXr.png" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Bleutrade'"> {{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_BTC">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_BTC">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_BTC">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_BTC">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>4.
+          <img src="http://list.wiki/images/8/83/EXMO.png" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_BTC">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_BTC">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>5.
+          <img src="https://cimg.co/w/rw-logo/0/5a6/574935a189.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Kraken'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Kraken'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>6.
+          <img src="https://cimg.co/w/rw-logo/0/5ab/cd3db2bea6.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>Ethereum</strong> ETH
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of ETH_BTC">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Litecoin</strong> LTC
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of LTC_BTC">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>NEM</strong> XEM
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_BTC">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_BTC">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="ETH">
+
+      <div class="my-5">
+        <h2>1.
+          <img src="https://cimg.co/w/rw-logo/0/5a6/57368214d8.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_ETH">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_ETH">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='BitFinex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>2.
+          <img src="https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmazX9HPBTQeEsDpTSxxvdbZGL6jX3uh778rdu7YtcHHg1"
+               class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_ETH">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_ETH">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>NEM</strong> XEM
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_ETH">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_ETH">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Bittrex'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>3.
+          <img src="http://i.imgur.com/YPIJfXr.png" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_ETH">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_ETH">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Bleutrade'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>4.
+          <img src="http://list.wiki/images/8/83/EXMO.png" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>BitcoinCash</strong> BCH
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_ETH">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of BCH_ETH">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td>
+              <strong>Dash</strong> DASH
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of DASH_USD">
+                <p *ngIf="data?.market=='Exmo'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-5">
+        <h2>5.
+          <img src="https://cimg.co/w/rw-logo/0/5ab/cd3db2bea6.svg" class="table-img">
+        </h2>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Currency</th>
+            <th>Volume</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td>
+              <strong>NEM</strong> XEM
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_ETH">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.volume}}</p>
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let data of XEM_ETH">
+                <p *ngIf="data?.market=='Hitbtc'">{{data?.price}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </mat-tab>
+
+  </mat-tab-group>
+
+</div>

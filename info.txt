@@ -1,0 +1,3 @@
+ng new myapp (to create angular project)
+ng serve (builds the application and starts a web server)
+ng g c test (make a component)

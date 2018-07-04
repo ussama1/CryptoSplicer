@@ -1,0 +1,168 @@
+<app-loader></app-loader>
+<div class="container mb-5">
+
+  <div *ngFor="let data of price">
+    <h1 class="each-component-title">{{data?.title}}</h1>
+  </div>
+  <!--<div class="news-contact">-->
+
+    <!--<div class="row">-->
+
+      <!--<div class="col-lg-4">-->
+        <!--<img class="news-img" src="../../assets/images/altcoin.jpg">-->
+      <!--</div>-->
+
+      <!--<div class="col-lg-8 each-new-contact">-->
+        <!--Altcoins, meaning "alternative coins", is another term for cryptocurrencies (other than Bitcoin). Since Bitcoin's release in 2009, many have noticed its crucial advantages over government money, while also giving recognition to the fact that some of its aspects can be improved upon. That has lead to the appearance of hundreds of different altcoins, which are all ultimately based on the same technology of the Blockchain but are designed differently in some ways, in order to achieve different goals.-->
+      <!--</div>-->
+
+    <!--</div>-->
+
+  <!--</div>-->
+
+  <mat-tab-group>
+
+    <mat-tab label="Recent">
+
+      <div class="mt-3">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pb-3" *ngFor="let data of result ; let i = index" (click)="clickMe(data.id,data.no_of_views)">
+
+          <div class="coinnews-blog">
+
+            <a href="{{data.news_url}}" target="_blank">
+              <img src="{{data.image}}" class="coinnews-blog-image">
+            </a>
+
+            <div class="coinnews-box">
+
+              <div class="coinnews-date"> {{data.date}} </div>
+
+              <div class="coinnews-img">
+                <a href="{{data.news_url}}" target="_blank">
+                  <img src="{{data.logo}}" alt="Coin New">
+                </a>
+              </div>
+
+              <div class="coinnewa-heading">
+                <a href="{{data.news_url}}" target="_blank">
+                  {{data.title}}
+                </a>
+              </div>
+
+              <div class="coinnews-cate">
+                {{data.category}}
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="">
+          <div class="col-lg-12">
+            <!-- <h1>Angular 2 - Pagination Example with logic like Google</h1> -->
+            <!--<ul class="pagination justify-content-center">-->
+
+            <!-- items being paged -->
+            <!--<div *ngFor="let item of pagedItems">{{item.name}}</div>-->
+
+            <!-- pager -->
+            <ul *ngIf="pager.pages && pager.pages.length" class="pagination justify-content-center">
+              <li class="page-item" [ngClass]="{hide:pager.currentPage === 1}">
+                <a (click)="AllCoins(1)" class="page-link">First</a>
+              </li>
+              <li class="page-item" [ngClass]="{hide:pager.currentPage === 1}">
+                <a (click)="AllCoins(pager.currentPage - 1)" class="page-link">Previous</a>
+              </li>
+              <li class="page-item" *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+                <a (click)="AllCoins(page)" class="page-link">{{page}}</a>
+              </li>
+              <li class="page-item" [ngClass]="{hide:pager.currentPage === pager.totalPages}">
+                <a (click)="AllCoins(pager.currentPage + 1)" class="page-link" type="Next">Next</a>
+              </li>
+              <li class="page-item" [ngClass]="{hide:pager.currentPage === pager.totalPages}">
+                <a (click)="AllCoins(pager.totalPages)" class="page-link" type="Last">Last</a>
+              </li>
+            </ul>
+            <!--</ul>-->
+          </div>
+        </div>
+      </div>
+
+    </mat-tab>
+
+    <mat-tab label="Top News">
+
+      <div class="mt-3">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pb-3" *ngFor="let data of rates ; let i = index">
+
+          <div class="coinnews-blog">
+
+            <a href="{{data.news_url}}" target="_blank">
+              <img src="{{data.image}}" class="coinnews-blog-image">
+            </a>
+
+            <div class="coinnews-box">
+
+              <div class="coinnews-date"> {{data.date}} </div>
+
+              <div class="coinnews-img">
+                <a href="{{data.news_url}}" target="_blank">
+                  <img src="{{data.logo}}" alt="Coin New">
+                </a>
+              </div>
+
+              <div class="coinnewa-heading">
+                <a href="{{data.news_url}}" target="_blank">
+                  {{data.title}}
+                </a>
+              </div>
+
+              <div class="coinnews-cate">
+                {{data.category}}
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="">
+          <div class="col-lg-12">
+            <!-- <h1>Angular 2 - Pagination Example with logic like Google</h1> -->
+            <!--<ul class="pagination justify-content-center">-->
+
+            <!-- items being paged -->
+            <!--<div *ngFor="let item of pagedItems">{{item.name}}</div>-->
+
+            <!-- pager -->
+            <ul *ngIf="pager1.pages && pager1.pages.length" class="pagination justify-content-center">
+              <li class="page-item" [ngClass]="{hide:pager1.currentPage === 1}">
+                <a (click)="AllTopCoin(1)" class="page-link">First</a>
+              </li>
+              <li class="page-item" [ngClass]="{hide:pager1.currentPage === 1}">
+                <a (click)="AllTopCoin(pager1.currentPage - 1)" class="page-link">Previous</a>
+              </li>
+              <li class="page-item" *ngFor="let page of pager1.pages" [ngClass]="{active:pager1.currentPage === page}">
+                <a (click)="AllTopCoin(page)" class="page-link">{{page}}</a>
+              </li>
+              <li class="page-item" [ngClass]="{hide:pager1.currentPage === pager1.totalPages}">
+                <a (click)="AllTopCoin(pager1.currentPage + 1)" class="page-link" type="Next">Next</a>
+              </li>
+              <li class="page-item" [ngClass]="{hide:pager1.currentPage === pager1.totalPages}">
+                <a (click)="AllTopCoin(pager1.totalPages)" class="page-link" type="Last">Last</a>
+              </li>
+            </ul>
+            <!--</ul>-->
+          </div>
+        </div>
+      </div>
+
+    </mat-tab>
+
+  </mat-tab-group>
+
+
+
+</div>
+

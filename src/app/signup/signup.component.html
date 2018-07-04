@@ -1,0 +1,76 @@
+<div class="form-1-img">
+  <div class="row">
+    <div class="col-xs-9 col-sm-7 col-md-6 col-lg-4 form-1">
+      <div class="form-1-header">
+        <h1>Sign Up</h1>
+        <ul class="form-1-sl">
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+        </ul>
+      </div>
+      <div class="form-1-body">
+        <form (ngSubmit)="!nameFormControl.hasError('required') &&  !nameFormControl.hasError('pattern') &&  !emailFormControl.hasError('required') &&
+     !emailFormControl.hasError('pattern') && !passwordFormControl.hasError('required') && !passwordFormControl.hasError('pattern') &&
+      !passwordFormControl.hasError('minlength') && !nameFormControl.hasError('maxlength') && !emailFormControl.hasError('maxlength') &&
+      !passwordFormControl.hasError('maxlength') && signup(f)" #f="ngForm">
+          <mat-form-field class="singup-feilds-padding">
+            <input class="signup-input-font" matInput placeholder="Enter Your User name" type="text" [formControl]="nameFormControl" required [(ngModel)]="model.username" (focusout)="getusername()" >
+            <span class="pointer" *ngIf="model.username" mat-icon-button matSuffix aria-label="Clear" (click)="model.username=''">
+              <mat-icon>close</mat-icon>
+               </span>
+            <mat-error *ngIf="nameFormControl.hasError('pattern')">
+              Please enter a valid user name
+            </mat-error>
+            <mat-error *ngIf="nameFormControl.hasError('required')">
+              User name is <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="nameFormControl.hasError('maxlength')">
+              Maximum Length of <strong>Username can be 50 characters</strong>
+            </mat-error>
+            <!--<mat-error *ngIf="signupForm.controls.['fName'].value == ''"><strong>Cannot be empty</strong></mat-error>-->
+            <!--<mat-error *ngIf="secondFormGroup.controls.fName.dirty && !secondFormGroup.controls.fName.value"> Special characters not allowed</mat-error>-->
+          </mat-form-field>
+
+          <mat-form-field class="singup-feilds-padding">
+            <input matInput placeholder="Enter Your Email" type="email" [formControl]="emailFormControl" required [(ngModel)]="model.email"(focusout)="getemail()">
+            <span class="pointer" *ngIf="model.email" tabindex=-11 mat-icon-button matSuffix aria-label="Clear" (click)="model.email=''">
+              <mat-icon>close</mat-icon>
+                       </span>
+            <mat-error *ngIf="emailFormControl.hasError('pattern')">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('maxlength')">
+              Maximum Length of <strong>Email can be 100 characters</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="singup-feilds-padding">
+            <input matInput [type]="hide ? 'password' : 'text'" #password placeholder="Enter Your Password" type="password" [formControl]="passwordFormControl" required [(ngModel)]="model.password">
+            <mat-icon class="pointer" data-toggle="tooltip" title="{{hide? 'Show' : 'Hide'}} Password" matSuffix (click)="hide = !hide">{{ hide ? 'visibility' : 'visibility_off' }}</mat-icon>
+            <mat-error *ngIf="passwordFormControl.hasError('pattern')">
+              Password must contain at least one upper case letter, one lower case letter, one special character and one digit
+            </mat-error>
+            <mat-error *ngIf="passwordFormControl.hasError('minlength')">
+              Password must be <strong>atleast 8 characters long</strong>
+            </mat-error>
+            <mat-error *ngIf="passwordFormControl.hasError('maxlength')">
+              Maximum Length of <strong>Password can be 30 characters</strong>
+            </mat-error>
+          </mat-form-field >
+          <mat-form-field class="singup-feilds-padding">
+            <input matInput [type]="hide2 ? 'password' : 'text'" #password2 placeholder="Confirm Your Password" type="password" [formControl]="passwordFormControl2" required [(ngModel)]="model.password2">
+            <mat-icon class="pointer" data-toggle="tooltip" title="{{hide2? 'Show' : 'Hide'}} Password" matSuffix (click)="hide2 = !hide2">{{ hide2 ? 'visibility' : 'visibility_off' }}</mat-icon>
+            <mat-error *ngIf="(passwordFormControl2.value != passwordFormControl.value) || passwordFormControl2.value == ''"><strong>Password must match </strong>
+            </mat-error>
+          </mat-form-field>
+          <a class="form-1-button"><button type="submit">Sign Up</button></a>
+          <div>Already have an account?<a href="/login"> Sign in </a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

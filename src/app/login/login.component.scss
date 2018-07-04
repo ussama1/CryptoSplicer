@@ -1,0 +1,241 @@
+///* form body*/
+//.form-body{
+//  background:#ffffff;
+//  padding:20px;
+//  text-align: center;
+//  margin-top: 25px;
+//  margin-bottom: 40px;
+//  border-radius: 5px;
+//  box-shadow: 0px 0px 10px #bdb9b9;
+//}
+//.form-body1{
+//  background:whitesmoke;
+//  padding:20px;
+//
+//}
+///*.login-form{*/
+///*background:rgba(255,255,255,0.8);*/
+///*padding:20px;*/
+///*border-top:3px solid#3e4043;*/
+///*}*/
+//.innter-form{
+//  padding-top:20px;
+//}
+//.final-login li{
+//  width:50%;
+//}
+//
+//.nav-tabs {
+//  border-bottom: none !important;
+//}
+//
+//.nav-tabs>li{
+//  color:#222 !important;
+//}
+//.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+//  color: #fff;
+//  background-color: #d14d42;
+//  border: none !important;
+//  border-bottom-color: transparent;
+//  border-radius: none !important;
+//}
+//.nav-tabs>li>a {
+//  margin-right: 2px;
+//  line-height: 1.428571429;
+//  border: none !important;
+//  border-radius:  none !important;
+//  text-transform:uppercase;
+//  font-size:16px;
+//}
+//
+//.social-login{
+//  text-align:center;
+//  font-size:12px;
+//}
+//.social-login p{
+//  margin:15px 0;
+//  font-weight: bold;
+//  color: #616161;
+//}
+//.social-login ul{
+//  margin:0;
+//  padding:0;
+//  list-style-type:none;
+//}
+//.social-login ul li{
+//  width:33%;
+//  float:left;
+//  clear:fix;
+//}
+//.social-login ul li a{
+//  font-size:13px;
+//  color:#fff;
+//  text-decoration:none;
+//  padding:10px 0;
+//  display:block;
+//}
+//.social-login ul li:nth-child(1) a{
+//  background:#3b5998;
+//}
+//.social-login ul li:nth-child(2) a{
+//  background:#e74c3d;
+//}
+//.social-login ul li:nth-child(3) a{
+//  background:#3698d9;
+//}
+//.sa-innate-form input[type=text], input[type=password], input[type=file], textarea, select, email{
+//  font-size:20px;
+//  outline:none;
+//  width:100%;
+//  color: black;
+//}
+//.sa-innate-form input[type=submit]{
+//  border:1px solid#e64b3b;
+//  background:#e64b3b;
+//  color:#fff;
+//  padding:10px 25px;
+//  font-size:14px;
+//  margin-top:5px;
+//}
+//.sa-innate-form input[type=submit]:hover{
+//  border:1px solid#db3b2b;
+//  background:#db3b2b;
+//  color:#fff;
+//}
+//
+//.sa-innate-form button{
+//  /*border: 1px solid#e64b3b;*/
+//  /*background: #e64b3b;*/
+//  /*color: #fff;*/
+//  /*padding: 10px 74px;*/
+//  /*font-size: 21px;*/
+//  /*margin-top: 10px;*/
+//  background-color: #cb2d3d;
+//  color: #fff;
+//  padding: 15px 32px;
+//  text-align: center;
+//  text-decoration: none;
+//  display: inline-block;
+//  font-size: 30px;
+//  margin: 4px 2px;
+//  cursor: pointer;
+//  width: 100%;
+//  float: right;
+//  border-radius: 40px;
+//}
+//
+//.sa-innate-form button:hover{
+//  background-color: transparent;
+//  transition: 0.5s all;
+//  color: #CB2B3D;
+//  box-shadow: 0px 7px 15px #a5a5a5;
+//}
+//.sa-innate-form p{
+//  font-size:13px;
+//  padding-top:10px;
+//}
+//
+//.signup-top-heading{
+//
+//  font-weight: bold;
+//  color: #616161;
+//}
+//.signup-center{
+//  margin: 0 auto;
+//  float: none;
+//}
+//.singup-feilds-padding{
+//  width:320px;
+//}
+//.singup-feilds-padding input{
+//  color: #797979 !important;
+//}
+//.signup-input-font{
+//  font-weight: 900;
+//  color: #616161;
+//  font-size: 25px;
+//}
+//.singup-feilds-padding input{
+//  border: none !important;
+//
+//}
+//.social-login > ul > li > a:hover i{
+//  transform: rotate(360deg);
+//  transition: 0.5s;
+//}
+//.social-login > ul > li > a:hover{
+//  box-shadow:0px 0px 5px #0D0D0D ;
+//}
+//.signup-fav-icons{
+//  font-size: 20px;
+//  margin-right: 10px;
+//  color: red;
+//}
+//.flash-background {
+//  //background: url(../../assets/img/signup-background.jpg) fixed;
+//  background-size: cover;
+//  position: relative;
+//  padding: 80px 50px;
+//}
+//.flash-header {
+//  background-color: #cb2d3d;
+//  position: relative;
+//  margin-top: -60px;
+//  padding: 10px 10px;
+//  border-radius: 5px;
+//  color: #ffffff;
+//  font-weight: bold;
+//  font-size: 20px;
+//  box-shadow: 0px 7px 15px #a5a5a5;
+//}
+//.flash-header> h2{
+//  font-family: inherit;
+//  font-weight: bold;
+//  text-align: center;
+//}
+//.flash-header> div> a{
+//  text-decoration:none;
+//  color:white;
+//  display: inline-block;
+//  vertical-align: top;
+//  font-weight: 500;
+//  font-size: 30px;
+//  margin: 20px;
+//}
+//.flash-header> div> a> i{
+//  padding: 15px;
+//  font-size: larger;
+//  font-weight: 700;
+//}
+//.signup-already-login{
+//  margin-top: 20px;
+//  font-size: 20px;
+//  color: #616161;
+//  margin-top: 20px;
+//}
+//.signup-already-login> a:hover{
+//  color: #db3b2b;
+//}
+//.form-center{
+//  float: none !important;
+//  margin: 0 auto !important;
+//}
+//.fb-icon>i:hover{
+//  color: #428bca;
+//  transform: rotate(360deg);
+//  transition: 0.5s;
+//}
+//.twit-icon>i:hover{
+//  color: #5bc0de;
+//  transform: rotate(360deg);
+//  transition: 0.5s;
+//}
+//.ggle-plus>i:hover{
+//  color:#ff0000;
+//  transform: rotate(360deg);
+//  transition: 0.5s;
+//}
+//mat-form-field.mat-form-field{
+//  font-size: 18px;
+//  font-weight:700;
+//}

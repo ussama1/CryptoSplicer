@@ -1,0 +1,45 @@
+<div class="form-1-img">
+  <div class="row">
+    <div class="col-xs-9 col-sm-7 col-md-6 col-lg-4 form-1">
+      <div class="form-1-header">
+        <h1>Log In</h1>
+        <ul class="form-1-sl">
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+        </ul>
+      </div>
+      <div class="form-1-body">
+        <form (ngSubmit)="!nameFormControl.hasError('required') && !nameFormControl.hasError('pattern') && !passwordFormControl.hasError('required')
+              && captcha" #f="ngForm" novalidate>
+          <mat-form-field class="singup-feilds-padding">
+            <input class="signup-input-font" matInput placeholder="Enter Your User name" type="text" [formControl]="nameFormControl" required [(ngModel)]="model.username" >
+            <!--<mat-error *ngIf="signupForm.controls.['fName'].value == ''"><strong>Cannot be empty</strong></mat-error>-->
+            <!--<mat-error *ngIf="secondFormGroup.controls.fName.dirty && !secondFormGroup.controls.fName.value"> Special characters not allowed</mat-error>-->
+          </mat-form-field>
+          <!-- <div  class="alert alert-danger">user name is requried</div> -->
+          <mat-form-field class="singup-feilds-padding">
+            <input matInput [type]="hide ? 'password' : 'text'" #password placeholder="Enter Your Password" type="password" [formControl]="passwordFormControl" required [(ngModel)]="model.password">
+            <mat-icon class="pointer" data-toggle="tooltip" title="{{hide? 'Show' : 'Hide'}} Password" matSuffix (click)="hide = !hide">{{ hide ? 'visibility' : 'visibility_off' }}</mat-icon>
+          </mat-form-field >
+
+          <!--<div>-->
+            <!--<re-captcha (resolved)="resolved($event)"  data-sitekey="6LeuolwUAAAAAE1KbfgD9nAOoUUS59jbZlhrp2lZ" required></re-captcha>-->
+          <!--</div>-->
+          <div class="form-group recaptcha-padding text-center" [ngClass]= "{ 'has-error': f.submitted && !captcha}">
+            <re-captcha (resolved)="resolved($event)" siteKey="6LcOuyYTAAAAAHTjFuqhA52fmfJ_j5iFk5PsfXaU"></re-captcha>
+            <!--<re-captcha (resolved)="resolved($event)" site_key="6LfYTT8UAAAAAJWyXErDzjumA4foNFwIXNlxlfM6" required></re-captcha>-->
+            <div *ngIf="f.submitted && !captcha" class="help-block">ReCaptcha is required</div>
+          </div>
+          <mat-checkbox>
+            Stay signed in
+          </mat-checkbox>
+          <a class="form-1-button"><button type="submit" (click)="Login(f)">Login</button></a>
+          <a routerLink="/forgot" class="form-1-forgot">Forgot Password?</a>
+          <div>Don't have an account?<a routerLink="/signup"> Sign Up</a></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

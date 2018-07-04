@@ -1,0 +1,85 @@
+<div class="container mb-5">
+
+  <h1 class="component-title component-title-border">Knowledge Base</h1>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="guides-1">
+        <div class="coinnews-item" *ngFor="let RES of Guides; let i = index">
+
+          <div class="coinnews-blog">
+
+            <a href="{{RES.news_url}}" target="_blank">
+              <img src="{{RES.image}}" class="coinnews-blog-image">
+            </a>
+
+            <div class="coinnews-box">
+
+              <div class="coinnews-date"> {{RES.date}} </div>
+
+              <div class="coinnews-img">
+                <a href="{{RES.news_url}}" target="_blank">
+                  <img src="{{RES.logo}}" alt="Coin New">
+                </a>
+              </div>
+
+              <div class="coinnewa-heading">
+                <a href="{{RES.news_url}}" target="_blank">
+                  {{RES.title}}
+                </a>
+              </div>
+
+              <div class="coinnews-cate">
+                {{RES.category}}
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="component-title component-title-border">Guides</h1>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="guides-2">
+        <div class="coinnews-item" *ngFor="let RES of Guides1; let i = index">
+
+          <div class="coinnews-blog">
+
+            <a href="{{RES.news_url}}" target="_blank">
+              <img src="{{RES.image}}" class="coinnews-blog-image">
+            </a>
+
+            <div class="coinnews-box">
+
+              <div class="coinnews-date"> {{RES.date}} </div>
+
+              <div class="coinnews-img">
+                <a href="{{RES.news_url}}" target="_blank">
+                  <img src="{{RES.logo}}" alt="Coin New">
+                </a>
+              </div>
+
+              <div class="coinnewa-heading">
+                <a href="{{RES.news_url}}" target="_blank">
+                  {{RES.title}}
+                </a>
+              </div>
+
+              <div class="coinnews-cate">
+                {{RES.category}}
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,28 @@
+<div class="form-1-img">
+  <div class="row">
+    <div class="col-xs-9 col-sm-7 col-md-6 col-lg-4 form-1">
+      <div class="form-1-header">
+        <h1>Forgot Password</h1>
+        <!--<ul class="form-1-sl">-->
+        <!--<li><a href=""><i class="fa fa-facebook"></i></a></li>-->
+        <!--<li><a href=""><i class="fa fa-twitter"></i></a></li>-->
+        <!--<li><a href=""><i class="fa fa-google-plus"></i></a></li>-->
+        <!--</ul>-->
+      </div>
+      <div class="form-1-body">
+        <form >
+          <mat-form-field>
+            <input matInput type="password" id="password" placeholder="Password" name="pass1"[(ngModel)]=pass1>
+
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput type="password" id="confirmPassword" placeholder="Confirm Password"name="pass2"[(ngModel)]=pass2>
+
+          </mat-form-field>
+          <a routerLink="/login" class="form-1-button"><button type="submit" (click)="resetpass(token,pass1,pass2)">Submit</button></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
