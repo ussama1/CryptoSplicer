@@ -1,6 +1,7 @@
 import { Component, Inject, Input, OnInit, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import {ActivatedRoute, Router} from '@angular/router';
+import {NgForm} from '@angular/forms';
 import swal from "sweetalert2";
 import {HeaderService} from './header.service';
 
@@ -53,13 +54,14 @@ export class HeaderComponent implements OnInit {
 // this.AnalyisNews(this.category);
   }
 
-  onsubmit(name) {
+  onsubmit(name,reset:NgForm) {
     $('.main-search').removeClass('active');
     $('body').removeClass('noScroll');
     $('.form-search').removeClass('flipInX');
-    this.router.navigate(['/search/' + name]);
-    localStorage.setItem('name', name);
+    this.router.navigate(['/search/'+this.name]);
+    // localStorage.setItem('name', name);
     console.log(this.name);
+    reset.resetForm();
   }
 
   check_login() {
@@ -89,32 +91,4 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  // AnalyisNews(category)
-  // {
-  //
-  //   this.obj.getNewsCoin(category).subscribe(Data=>{
-  //     this.result= Data
-  //     console.log(this.result+'Data Are Here of Analysis')
-  //
-  //   })
-  // }
-  // isAuthenticated() {
-  //   if (isPlatformBrowser(this.platformId)) {
-  //     const user = sessionStorage.getItem('currentUser');
-  //     if (user !== '' && user) {
-  //       return this.IsLogedIn = true;
-  //     } else {
-  //       return this.IsLogedIn = false;
-  //     }
-  //   }
-  // }
-  //
-  // logFunction() {
-  //   if (isPlatformBrowser(this.platformId)) {
-  //     localStorage.clear();
-  //   }
-  //   if (this.Logedin === '1') {
-  //     this.Logedin = '0';
-  //   }
-  // }
 }

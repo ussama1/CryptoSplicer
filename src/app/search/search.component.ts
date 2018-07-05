@@ -20,14 +20,20 @@ public bitcoin :any[];
   constructor(private router: Router, private route: ActivatedRoute,private http: HeaderService) { }
 
   ngOnInit() {
-    console.log('gggggggggggg');
-    this.name = localStorage.getItem('name');
-    console.log(name)
-    this.generalsearch();
+    // console.log('gggggggggggg');
+    // this.name = localStorage.getItem('name');
+
+    this.sub=this.route.params.subscribe(params =>{
+      this.name=+params['name'];
+      this.generalsearch(params['name']);
+    })
+
+    // console.log(name)
+    // this.generalsearch();
   }
 
-  generalsearch() {
-    this.http.generalsearch(this.name).subscribe(data => {
+  generalsearch(name) {
+    this.http.generalsearch(name).subscribe(data => {
       this.bitcoin = data;
       console.log(this.bitcoin);
      // this.bitcoin=Array.of(this.bitcoin);

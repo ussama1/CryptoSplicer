@@ -22,7 +22,7 @@ export class HeaderService {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     console.log(name);
-    return this.http.get(Config.api + 'news/search/'+ name+'/',{headers:headers}).map((response: Response) => response.json()["Results"]);
+    return this.http.get(Config.api + 'news/search/'+ name,{headers:headers}).map((response: Response) => response.json()["Results"]);
   }
 
 

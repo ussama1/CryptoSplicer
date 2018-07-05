@@ -3,11 +3,11 @@
   <i class="fas fa-times" id="closeSearch"></i>
   <div class="search-holder">
     <div class="container">
-      <form class="form-search animated">
+      <form class="form-search animated" #reset="ngForm">
         <mat-form-field>
           <input matInput type="search" placeholder="Search to Learn with a ROAR!" value="" name="name" [(ngModel)]= "name">
         </mat-form-field>
-        <button (click)="onsubmit(name)" style="display: none;">hi</button>
+        <button (click)="onsubmit(name,reset)" style="display: none;">hi</button>
         <!--<input class="search-input" placeholder="Search to Learn with a ROAR!">-->
       </form>
     </div>
